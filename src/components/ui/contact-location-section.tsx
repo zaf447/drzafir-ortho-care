@@ -72,7 +72,7 @@ const ContactLocationSection = () => {
                     </div>
                     <div className="flex justify-between">
                       <span>Saturday</span>
-                      <span>9:00 AM - 6:00 PM</span>
+                      <span>By Appointment</span>
                     </div>
                     <div className="flex justify-between">
                       <span>Sunday</span>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Instagram, Facebook, MessageCircle, ExternalLink } from "lucide-react";
+import { Instagram, Facebook, MessageCircle, ExternalLink, Mail } from "lucide-react";
 
 const SocialMediaSection = () => {
   const socialLinks = [
@@ -98,6 +98,20 @@ const SocialMediaSection = () => {
                     </div>
                   </DialogContent>
                 </Dialog>
+              </div>
+
+              {/* Direct Email Section */}
+              <div className="mt-6">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full bg-blue-50 hover:bg-blue-100 border-blue-200 hover:border-blue-300 transition-all duration-300 h-16"
+                  onClick={() => window.open("mailto:zafir.shehravi@nmc.ae", "_self")}
+                >
+                  <Mail className="h-6 w-6 mr-3 text-blue-600" />
+                  <span className="text-gray-700 font-medium">Email Dr. Zafir Directly</span>
+                  <ExternalLink className="h-4 w-4 ml-2 text-gray-500" />
+                </Button>
               </div>
               
               <div className="text-center mt-6">
