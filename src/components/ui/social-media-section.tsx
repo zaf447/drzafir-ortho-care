@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Instagram, Facebook, Linkedin, ExternalLink } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Instagram, Facebook, MessageCircle, ExternalLink } from "lucide-react";
 
 const SocialMediaSection = () => {
   const socialLinks = [
@@ -22,6 +23,10 @@ const SocialMediaSection = () => {
 
   const handleSocialClick = (url: string) => {
     window.open(url, "_blank");
+  };
+
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/971505415721", "_blank");
   };
 
   return (
@@ -52,6 +57,47 @@ const SocialMediaSection = () => {
                     <ExternalLink className="h-4 w-4 ml-2 text-gray-500" />
                   </Button>
                 ))}
+              </div>
+              
+              {/* WhatsApp Section */}
+              <div className="mt-6">
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="w-full bg-green-50 hover:bg-green-100 border-green-200 hover:border-green-300 transition-all duration-300 h-16"
+                    >
+                      <MessageCircle className="h-6 w-6 mr-3 text-green-600" />
+                      <span className="text-gray-700 font-medium">WhatsApp Dr. Zafir</span>
+                      <ExternalLink className="h-4 w-4 ml-2 text-gray-500" />
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-md">
+                    <DialogHeader>
+                      <DialogTitle className="text-primary">WhatsApp Dr. Zafir</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4">
+                      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          <strong>Important Notice:</strong><br />
+                          • Only for personal queries<br />
+                          • Reply within 24 hours<br />
+                          • No calling allowed<br />
+                          • Investigation reports, images or medical reports will NOT be shared on WhatsApp<br />
+                          • No appointments can be booked on WhatsApp
+                        </p>
+                      </div>
+                      <Button 
+                        onClick={handleWhatsAppClick}
+                        className="w-full bg-green-600 hover:bg-green-700 text-white"
+                      >
+                        <MessageCircle className="mr-2 h-4 w-4" />
+                        Continue to WhatsApp
+                      </Button>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
               
               <div className="text-center mt-6">

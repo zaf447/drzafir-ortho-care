@@ -13,11 +13,6 @@ const TrustSection = () => {
       icon: Shield,
       title: "Insurance Accepted",
       description: "Working with major insurance providers for your convenience"
-    },
-    {
-      icon: Clock,
-      title: "Emergency Trauma Care",
-      description: "Available for urgent orthopedic trauma cases and injuries"
     }
   ];
 
@@ -41,7 +36,7 @@ const TrustSection = () => {
           </Card>
 
           {/* Highlights */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {highlights.map((highlight, index) => (
               <Card key={index} className="shadow-medical hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6 text-center">
@@ -55,23 +50,6 @@ const TrustSection = () => {
             ))}
           </div>
 
-          {/* Status Badges */}
-          <div className="text-center mt-12">
-            <div className="flex flex-wrap justify-center gap-3">
-              <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-                <CheckCircle className="w-4 h-4 mr-2" />
-                🕘 Appointments Open
-              </Badge>
-              <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-                <CheckCircle className="w-4 h-4 mr-2" />
-                Insurance Accepted
-              </Badge>
-              <Badge variant="outline" className="border-accent text-accent px-4 py-2">
-                <CheckCircle className="w-4 h-4 mr-2" />
-                Emergency Trauma Cases Welcome
-              </Badge>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -8,13 +8,11 @@ const ContactLocationSection = () => {
   };
 
   const handlePhoneCall = () => {
-    // Phone number would be added here when available
-    window.open("tel:+971XXXXXXXXX", "_self");
+    window.open("tel:8006624", "_self");
   };
 
-  const handleWhatsApp = () => {
-    // WhatsApp number would be added here when available
-    window.open("https://wa.me/971XXXXXXXXX", "_blank");
+  const handleEmail = () => {
+    window.open("mailto:appointmentdeiradxb@nmc.ae", "_self");
   };
 
   return (
@@ -99,15 +97,15 @@ const ContactLocationSection = () => {
                       onClick={handlePhoneCall}
                     >
                       <Phone className="mr-2 h-4 w-4" />
-                      Call Clinic
+                      Call: 800 6624
                     </Button>
                     <Button 
                       variant="outline" 
-                      className="justify-start border-green-500 text-green-600 hover:bg-green-500 hover:text-white"
-                      onClick={handleWhatsApp}
+                      className="justify-start border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+                      onClick={handleEmail}
                     >
                       <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp
+                      Email Clinic
                     </Button>
                   </div>
                 </CardContent>

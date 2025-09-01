@@ -16,7 +16,7 @@ const ServicesSection = () => {
       title: "Regenerative Orthopedic Treatments",
       items: [
         "PRP (Platelet-Rich Plasma) Injections",
-        "Stem Cell & Biologic Therapies",
+        "Orthobiologics and Cell-Based Therapies",
         "Cell-Based Treatment for Cartilage, Tendon & Joint Repair"
       ]
     },
@@ -26,8 +26,7 @@ const ServicesSection = () => {
       items: [
         "Expert treatment of simple and complex fractures",
         "Surgical and non-surgical fracture care",
-        "Post-traumatic joint and bone rehabilitation",
-        "Emergency orthopedic trauma care"
+        "Post-traumatic joint and bone rehabilitation"
       ]
     },
     {
