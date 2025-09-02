@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Instagram, Facebook, MessageCircle, ExternalLink, Mail } from "lucide-react";
+import { Instagram, Facebook, MessageCircle, ExternalLink, Mail, Copy } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const SocialMediaSection = () => {
+  const { toast } = useToast();
+  
   const socialLinks = [
     {
       name: "Instagram",
@@ -27,6 +30,14 @@ const SocialMediaSection = () => {
 
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/971505415721", "_blank");
+  };
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("zafir.shehravi@nmc.ae");
+    toast({
+      title: "Email Copied",
+      description: "Dr. Zafir's email has been copied to clipboard",
+    });
   };
 
   return (
@@ -101,7 +112,7 @@ const SocialMediaSection = () => {
               </div>
 
               {/* Direct Email Section */}
-              <div className="mt-6">
+              <div className="mt-6 space-y-3">
                 <Button
                   variant="outline"
                   size="lg"
@@ -111,6 +122,15 @@ const SocialMediaSection = () => {
                   <Mail className="h-6 w-6 mr-3 text-blue-600" />
                   <span className="text-gray-700 font-medium">Email Dr. Zafir Directly</span>
                   <ExternalLink className="h-4 w-4 ml-2 text-gray-500" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full bg-gray-50 hover:bg-gray-100 border-gray-200 hover:border-gray-300 transition-all duration-300 h-12"
+                  onClick={handleCopyEmail}
+                >
+                  <Copy className="h-4 w-4 mr-2 text-gray-600" />
+                  <span className="text-gray-700 text-sm">Copy Email Address</span>
                 </Button>
               </div>
               

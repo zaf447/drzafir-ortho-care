@@ -82,15 +82,24 @@ const AppointmentReviewSection = () => {
         </div>
       </div>
 
-      {/* Sticky Mobile CTA */}
-      <div className="fixed bottom-4 left-4 right-4 md:hidden z-50">
-        <Button 
-          size="lg" 
-          className="w-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-accent shadow-2xl"
+      {/* Mobile Floating Buttons */}
+      <div className="fixed bottom-4 right-4 z-50 md:hidden flex flex-col gap-2">
+        <Button
+          size="lg"
+          className="shadow-lg bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-4 py-3"
           onClick={handleBookAppointment}
         >
-          <Calendar className="mr-2 h-5 w-5" />
-          Book Appointment
+          <Calendar className="h-4 w-4 mr-2" />
+          Book
+        </Button>
+        <Button
+          size="lg"
+          variant="outline"
+          className="shadow-lg bg-white hover:bg-gray-50 text-primary border-primary rounded-full px-4 py-3"
+          onClick={handleGoogleReview}
+        >
+          <Star className="h-4 w-4 mr-2" />
+          Review
         </Button>
       </div>
     </section>
