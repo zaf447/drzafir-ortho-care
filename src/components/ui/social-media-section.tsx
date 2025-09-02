@@ -112,26 +112,27 @@ const SocialMediaSection = () => {
               </div>
 
               {/* Direct Email Section */}
-              <div className="mt-6 space-y-3">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="w-full bg-blue-50 hover:bg-blue-100 border-blue-200 hover:border-blue-300 transition-all duration-300 h-16"
-                  onClick={() => window.open("mailto:zafir.shehravi@nmc.ae", "_self")}
-                >
-                  <Mail className="h-6 w-6 mr-3 text-blue-600" />
-                  <span className="text-gray-700 font-medium">Email Dr. Zafir Directly</span>
-                  <ExternalLink className="h-4 w-4 ml-2 text-gray-500" />
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="w-full bg-gray-50 hover:bg-gray-100 border-gray-200 hover:border-gray-300 transition-all duration-300 h-12"
-                  onClick={handleCopyEmail}
-                >
-                  <Copy className="h-4 w-4 mr-2 text-gray-600" />
-                  <span className="text-gray-700 text-sm">Copy Email Address</span>
-                </Button>
+              <div className="mt-6">
+                <div className="flex gap-2">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="flex-1 bg-blue-50 hover:bg-blue-100 border-blue-200 hover:border-blue-300 transition-all duration-300 h-16"
+                    onClick={() => window.open("mailto:zafir.shehravi@nmc.ae", "_self")}
+                  >
+                    <Mail className="h-6 w-6 mr-3 text-blue-600" />
+                    <span className="text-gray-700 font-medium">Email Dr. Zafir Directly</span>
+                    <ExternalLink className="h-4 w-4 ml-2 text-gray-500" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="bg-blue-50 hover:bg-blue-100 border-blue-200 hover:border-blue-300 transition-all duration-300 h-16 px-4"
+                    onClick={handleCopyEmail}
+                  >
+                    <Copy className="h-4 w-4 text-blue-600" />
+                  </Button>
+                </div>
               </div>
               
               <div className="text-center mt-6">

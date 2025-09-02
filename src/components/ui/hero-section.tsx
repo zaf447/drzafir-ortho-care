@@ -42,13 +42,13 @@ const HeroSection = () => {
 
           {/* Doctor Photo */}
           <div className="flex justify-center lg:justify-end">
-            <Card className="p-2 shadow-medical bg-white max-w-md">
+            <div className="w-48 h-48 rounded-full overflow-hidden shadow-medical bg-white p-2">
               <img 
                 src="/lovable-uploads/a1175f87-7fa7-4381-8c7d-c649fdc97b57.png" 
                 alt="Dr. Zafir - Orthopedic Surgeon"
-                className="w-full h-auto rounded-lg object-cover"
+                className="w-full h-full rounded-full object-cover"
               />
-            </Card>
+            </div>
           </div>
         </div>
       </div>
