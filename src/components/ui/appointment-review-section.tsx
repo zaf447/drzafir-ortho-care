@@ -83,7 +83,7 @@ const AppointmentReviewSection = () => {
       </div>
 
       {/* Mobile Floating Buttons */}
-      <div className="fixed bottom-4 right-4 z-50 md:hidden flex flex-col gap-2">
+      <div className="fixed bottom-4 left-4 z-50 md:hidden flex flex-row gap-2">
         <Button
           size="lg"
           className="shadow-lg bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-4 py-3"
