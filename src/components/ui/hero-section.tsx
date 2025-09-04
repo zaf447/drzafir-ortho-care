@@ -44,7 +44,7 @@ const HeroSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="w-48 h-48 rounded-full overflow-hidden shadow-medical bg-white p-2">
               <img 
-                src="/lovable-uploads/a1175f87-7fa7-4381-8c7d-c649fdc97b57.png" 
+                src="/lovable-uploads/bb68b6af-5294-4454-babe-c52866d1c0dd.png" 
                 alt="Dr. Zafir - Orthopedic Surgeon"
                 className="w-full h-full rounded-full object-cover"
               />
