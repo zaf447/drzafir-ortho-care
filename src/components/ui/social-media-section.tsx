@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Instagram, Facebook, MessageCircle, ExternalLink, Mail, Copy } from "lucide-react";
+import { Instagram, Facebook, MessageCircle, ExternalLink, Mail, Copy, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const SocialMediaSection = () => {
@@ -38,6 +38,10 @@ const SocialMediaSection = () => {
       title: "Email Copied",
       description: "Dr. Zafir's email has been copied to clipboard",
     });
+  };
+
+  const handleDirectCall = () => {
+    window.open("tel:042339976", "_self");
   };
 
   return (
@@ -133,6 +137,22 @@ const SocialMediaSection = () => {
                     <Copy className="h-4 w-4 text-blue-600" />
                   </Button>
                 </div>
+              </div>
+
+              {/* Direct Office Call */}
+              <div className="mt-6">
+                <div className="text-center mb-3">
+                  <p className="text-sm text-muted-foreground">No appointment - for general queries</p>
+                </div>
+                <Button
+                  onClick={handleDirectCall}
+                  variant="outline"
+                  size="lg"
+                  className="w-full bg-green-50 hover:bg-green-100 border-green-200 hover:border-green-300 transition-all duration-300 h-16"
+                >
+                  <Phone className="h-6 w-6 mr-3 text-green-600" />
+                  <span className="text-gray-700 font-medium">Call Office Directly: 042-339976</span>
+                </Button>
               </div>
               
               <div className="text-center mt-6">
