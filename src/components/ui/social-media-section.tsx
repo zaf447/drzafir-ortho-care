@@ -151,7 +151,7 @@ const SocialMediaSection = () => {
                   className="w-full bg-green-50 hover:bg-green-100 border-green-200 hover:border-green-300 transition-all duration-300 h-16"
                 >
                   <Phone className="h-6 w-6 mr-3 text-green-600" />
-                  <span className="text-gray-700 font-medium">Call Office Directly: 042-339976</span>
+                  <span className="text-gray-700 font-medium">Call Office Directly: 04-2339976</span>
                 </Button>
               </div>
               
