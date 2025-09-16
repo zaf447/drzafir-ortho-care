@@ -36,6 +36,25 @@ const HeroSection = () => {
                   <ExternalLink className="mr-2 h-5 w-5" />
                   Book an Appointment
                 </Button>
+                
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  onClick={() => window.open("https://drzafir-guide.lovable.app/", "_blank")}
+                >
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  Click for Exercises
+                </Button>
+                
+                <Button 
+                  size="lg" 
+                  variant="secondary"
+                  className="text-lg px-8 py-6"
+                  onClick={() => window.location.href = "/connect"}
+                >
+                  Connect with Dr Zafir
+                </Button>
               </div>
             </div>
           </div>
