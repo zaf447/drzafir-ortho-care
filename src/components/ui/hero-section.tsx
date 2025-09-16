@@ -30,7 +30,7 @@ const HeroSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-accent text-lg px-8 py-6"
+                  className="bg-green-600 hover:bg-green-700 text-white shadow-lg text-lg px-8 py-6"
                   onClick={handleBookAppointment}
                 >
                   <ExternalLink className="mr-2 h-5 w-5" />
@@ -39,8 +39,7 @@ const HeroSection = () => {
                 
                 <Button 
                   size="lg" 
-                  variant="outline"
-                  className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  className="bg-yellow-600 hover:bg-yellow-700 text-white shadow-lg text-lg px-8 py-6"
                   onClick={() => window.open("https://drzafir-guide.lovable.app/", "_blank")}
                 >
                   <ExternalLink className="mr-2 h-5 w-5" />
@@ -49,8 +48,7 @@ const HeroSection = () => {
                 
                 <Button 
                   size="lg" 
-                  variant="secondary"
-                  className="text-lg px-8 py-6"
+                  className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg text-lg px-8 py-6"
                   onClick={() => window.location.href = "/connect"}
                 >
                   Connect with Dr Zafir
