@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 const HeroSection = () => {
   const handleBookAppointment = () => {
-    window.open("https://bit.ly/drzafir", "_blank");
+    window.open("https://booking.nmc.ae/en-ae/doctor/orthopaedics/dubai/zafir-shehravi", "_blank");
   };
 
   return (
