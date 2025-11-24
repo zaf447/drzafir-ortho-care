@@ -11,7 +11,7 @@ const FloatingActionButtons = () => {
   };
 
   return (
-    <div className="fixed bottom-6 left-0 right-0 z-[100] md:hidden flex flex-row gap-3 justify-center px-4 pointer-events-none">
+    <div className="fixed bottom-6 left-0 right-0 z-[100] flex flex-row gap-3 justify-center px-4 pointer-events-none">
       <Button
         size="lg"
         className="shadow-2xl bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-6 py-3 pointer-events-auto"
