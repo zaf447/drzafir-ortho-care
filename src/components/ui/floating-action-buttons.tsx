@@ -3,7 +3,7 @@ import { Calendar, Star } from "lucide-react";
 
 const FloatingActionButtons = () => {
   const handleBookAppointment = () => {
-    window.open("https://bit.ly/drzafir", "_blank");
+    window.open("https://booking.nmc.ae/en-ae/doctor/orthopaedics/dubai/zafir-shehravi", "_blank");
   };
 
   const handleGoogleReview = () => {
