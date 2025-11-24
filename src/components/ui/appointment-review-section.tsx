@@ -83,22 +83,21 @@ const AppointmentReviewSection = () => {
       </div>
 
       {/* Mobile Floating Buttons */}
-      <div className="fixed bottom-4 left-4 z-50 md:hidden flex flex-row gap-2">
+      <div className="fixed bottom-4 left-4 right-4 z-[100] md:hidden flex flex-row gap-2 justify-center pointer-events-auto">
         <Button
           size="lg"
-          className="shadow-lg bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-4 py-3"
+          className="shadow-2xl bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-6 py-3 pointer-events-auto"
           onClick={handleBookAppointment}
         >
-          <Calendar className="h-4 w-4 mr-2" />
+          <Calendar className="h-5 w-5 mr-2" />
           Book
         </Button>
         <Button
           size="lg"
-          variant="outline"
-          className="shadow-lg bg-white hover:bg-gray-50 text-primary border-primary rounded-full px-4 py-3"
+          className="shadow-2xl bg-background border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full px-6 py-3 pointer-events-auto"
           onClick={handleGoogleReview}
         >
-          <Star className="h-4 w-4 mr-2" />
+          <Star className="h-5 w-5 mr-2" />
           Review
         </Button>
       </div>
