@@ -81,26 +81,6 @@ const AppointmentReviewSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Mobile Floating Buttons */}
-      <div className="fixed bottom-4 left-4 right-4 z-[100] md:hidden flex flex-row gap-2 justify-center pointer-events-auto">
-        <Button
-          size="lg"
-          className="shadow-2xl bg-accent hover:bg-accent/90 text-accent-foreground rounded-full px-6 py-3 pointer-events-auto"
-          onClick={handleBookAppointment}
-        >
-          <Calendar className="h-5 w-5 mr-2" />
-          Book
-        </Button>
-        <Button
-          size="lg"
-          className="shadow-2xl bg-background border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full px-6 py-3 pointer-events-auto"
-          onClick={handleGoogleReview}
-        >
-          <Star className="h-5 w-5 mr-2" />
-          Review
-        </Button>
-      </div>
     </section>
   );
 };
