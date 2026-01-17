@@ -61,7 +61,7 @@ const FloatingActionButtons = () => {
           onClick={() => setIsChatOpen(!isChatOpen)}
         >
           <MessageCircle className="h-5 w-5 mr-2" />
-          {isChatOpen ? "Close" : "Ask Dr Zafir"}
+          Ask Dr Zafir
         </Button>
       </div>
     </>
