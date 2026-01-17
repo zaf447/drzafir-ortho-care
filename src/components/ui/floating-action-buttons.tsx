@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Star } from "lucide-react";
+import { Calendar, Star, MessageCircle } from "lucide-react";
 
 const FloatingActionButtons = () => {
   const handleBookAppointment = () => {
@@ -8,6 +8,10 @@ const FloatingActionButtons = () => {
 
   const handleGoogleReview = () => {
     window.open("https://g.page/r/CSBtdsCzLwTQEAE/review", "_blank");
+  };
+
+  const handleAskDrZafir = () => {
+    window.open("https://askdrzafir.lovable.app", "_blank");
   };
 
   return (
@@ -27,6 +31,14 @@ const FloatingActionButtons = () => {
       >
         <Star className="h-5 w-5 mr-2" />
         Review
+      </Button>
+      <Button
+        size="lg"
+        className="shadow-2xl bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 pointer-events-auto"
+        onClick={handleAskDrZafir}
+      >
+        <MessageCircle className="h-5 w-5 mr-2" />
+        Ask Dr Zafir
       </Button>
     </div>
   );
